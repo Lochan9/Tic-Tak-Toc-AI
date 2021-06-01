@@ -9,7 +9,6 @@ class Player():
     def get_move(self, game):
         pass
 
-
 class HumanPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
@@ -80,3 +79,4 @@ class SmartComputerPlayer(Player):
                 if sim_score['score'] < best['score']:
                     best = sim_score
         return best
+    
